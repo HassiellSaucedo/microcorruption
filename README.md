@@ -21,7 +21,7 @@ First, we can see that there was a password that was created before, when we get
 44d2:  0f43           clr	r15
 44d4:  3041           ret
 ```
-We can see that there's the instruction to compare the value we entered that got stored in the address of r13 with the 0x2400 Memory Address.
+We can see that there's the instruction to compare the value we entered that got stored in the address that points r13 with the 0x2400 Memory Address.
 If we glance at the Live memory dump there will be lying the password right in front of us, as it's being compared with our input.
 ```
 2400: 4726 6b3b 6c48 5200 0000 0000 0000 0000   G&k;lHR.........
