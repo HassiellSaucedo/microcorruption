@@ -7,6 +7,7 @@ Found Flag by Static Analysis.
 
 First, we can see that there was a password that was created before, when we get to the check_password function:
 ```
+447e <create_password>
 44bc:  0e43           clr	r14
 44be:  0d4f           mov	r15, r13
 44c0:  0d5e           add	r14, r13
@@ -37,6 +38,7 @@ Found Flag by Static Analysis.
 
 Here, the lock again comes with a password, if we check the check_password function we can see:
 ```
+448a <check_password>
 448a:  bf90 3644 0000 cmp	#0x4436, 0x0(r15)
 4490:  0d20           jnz	$+0x1c <check_password+0x22>
 4492:  bf90 4f7a 0200 cmp	#0x7a4f, 0x2(r15)
