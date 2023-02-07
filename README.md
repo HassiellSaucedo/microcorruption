@@ -5,7 +5,7 @@ Here's my progress to the CTF https://microcorruption.com/
 <h3>New Orleans</h3>
 Found Flag by Static Analysis.
 
-First, we can see that there was a password that was created before, when we get to the check_password:
+First, we can see that there was a password that was created before, when we get to the check_password function:
 ```
 44bc:  0e43           clr	r14
 44be:  0d4f           mov	r15, r13
