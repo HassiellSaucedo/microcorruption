@@ -52,8 +52,8 @@ Here, the lock again comes with a password, if we check the check_password funct
 44ae:  0f4e           mov	r14, r15
 44b0:  3041           ret
 ```
-We get the hint at the manual that the microcontroller is a MSP430, a 16-bit architecture, here we get into endianness concepts, sepecifically with little-endian
-way of storage. at this block we can note that there's multiple cmp instructions, that compares our input with the bytes stated at the functions. reordering
+We get the hint at the manual that the microcontroller is a MSP430, a 16-bit architecture, here we get into <b>endianness</b> concepts, sepecifically with little-endian
+way of storage. at this block we can note that there's multiple cmp instructions, that compares our input with the bytes stated at the intructions. reordering
 the structure of the bits we get:
 
 ```36444f7a514f3d32```
