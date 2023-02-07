@@ -7,7 +7,7 @@ Found Flag by Static Analysis.
 
 First, we can see that there was a password that was created before, when we get to the check_password function:
 ```
-447e <create_password>
+44bc <check_password>
 44bc:  0e43           clr	r14
 44be:  0d4f           mov	r15, r13
 44c0:  0d5e           add	r14, r13
